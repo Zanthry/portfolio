@@ -11,7 +11,6 @@ El objetivo de este portafolio es actuar como un **Santuario de Galería Digital
 ### Características Principales
 - **Cuadrícula Masonry Inmersiva**: Un diseño fluido y orgánico que respeta las proporciones originales de cada obra.
 - **Lightbox Etéreo**: Una experiencia de visualización a pantalla completa sin bordes.
-- **Ruta Fantasma (Ghost Route)**: Un portal de subida oculto al que solo se puede acceder mediante la ruta secreta `#admin` en la URL.
 - **Interfaz Atmosférica**: Cuenta con sutiles efectos de granulado y sombras de *papel sobre piedra* para simular una obra física.
 
 ## 🛠️ Cómo Fue Construido
