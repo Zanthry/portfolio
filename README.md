@@ -28,13 +28,6 @@ Este proyecto fue construido con un enfoque en el **rendimiento ligero** y el us
 - **Playfair Display**: Utilizada para los encabezados, reflejando trazos orgánicos y clásicos del carboncillo.
 - **Inter**: Utilizada para los elementos de interfaz, proporcionando precisión técnica y legibilidad.
 
-## 🔒 La Ruta Fantasma (Acceso de Administrador)
-
-Para mantener una interfaz perfectamente limpia para los visitantes, no hay botones de inicio de sesión visibles. En su lugar, el sitio utiliza un enfoque de "Ruta Fantasma" para la gestión del contenido.
-
-1. Navega a la URL de tu sitio y añade `#admin` al final (ej. `https://zanthry.github.io/portfolio/#admin`).
-2. El sitio se desvanecerá instantáneamente en un desenfoque cinematográfico (`backdrop-filter: blur(10px)`).
-3. El elegante portal de subida se deslizará a la vista, permitiendo publicar nuevas piezas directamente en tu galería y en Firebase.
 
 ---
 *Diseñado con contraste. Construido con precisión.*
