@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gallery Sanctuary | Charcoal Artist</title>
+    <meta name="description"
+        content="A minimalist, high-end web portfolio for a charcoal artist, featuring deep textural depth and high contrast.">
+    <!-- Google Fonts: Playfair Display (headings) & Inter (UI/nav) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grain-overlay"></div>
+
+    <nav class="main-nav">
+        <div class="nav-brand">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero-bg.png');"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Santiago Galindo<br><i></i></h1>
+            <p class="hero-subtitle">Exploring the dichotomy of dust and light.</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Discover</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <main id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="masonry-grid" id="masonryGrid">
+                <!-- Gallery items will be populated by JS dynamically -->
+            </div>
+            <div class="pagination-container">
+                <button id="loadMoreBtn" class="load-more-btn hidden">Load More</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <img src="assets/ABOUTPHOTO.png" alt="Santiago Galindo" class="about-image">
+            <div class="about-content">
+                <h2 class="about-title">The Intersection of Code & Charcoal</h2>
+                <div class="about-text">
+                    <p>I am a Software Engineer and a Charcoal Artist. My work seeks to explore the dichotomy between
+                        the precision of digital engineering and the raw, imperfect nature of charcoal dust.</p>
+                    <p>Through this digital sanctuary, the lines of code breathe life into still strokes, bridging two
+                        distinct disciplines into a unified aesthetic experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-container">
+            <h2 class="section-title">Reach the Sanctuary</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="contact-form-group">
+                    <input type="text" id="contactName" placeholder="Name" required>
+                </div>
+                <div class="contact-form-group">
+                    <input type="email" id="contactEmail" placeholder="Email Address" required>
+                </div>
+                <div class="contact-form-group">
+                    <textarea id="contactMessage" rows="1" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" id="contactBtn" class="ghost-button">Send</button>
+                <div id="contactFeedback" class="contact-feedback hidden">Message received in the sanctuary.</div>
+            </form>
+        </div>
+
+        <footer class="social-footer">
+            <div class="social-container">
+                <a href="https://www.instagram.com/zanthy.galindo/" target="_blank" rel="noopener noreferrer"
+                    class="ghost-link">INSTAGRAM</a>
+                <span class="divider">/</span>
+                <a href="https://www.tiktok.com/@santiago.galindo702" target="_blank" rel="noopener noreferrer"
+                    class="ghost-link">TIKTOK</a>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-close" id="lightboxClose">&times;</div>
+        <img src="" alt="Expanded Artwork" class="lightbox-img" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Admin Panel (Hidden by Default) -->
+    <section class="admin-panel hidden" id="adminPanel">
+        <div class="admin-container">
+            <h3>Admin Upload</h3>
+            <form id="uploadForm" class="admin-form">
+                <div class="form-group">
+                    <label for="artTitle">Title</label>
+                    <input type="text" id="artTitle" placeholder="Artwork Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="artFile">Charcoal Image</label>
+                    <input type="file" id="artFile" accept="image/*" required>
+                </div>
+                <button type="submit" id="uploadBtn">Publish to Gallery</button>
+            </form>
+        </div>
+        <div class="upload-overlay" id="uploadOverlay">
+            <div class="fading-grain">Uploading...</div>
+        </div>
+    </section>
+
+    <!-- Use type="module" to allow ES6 imports for Firebase -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
