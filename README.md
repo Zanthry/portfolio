@@ -1,41 +1,41 @@
-# 🌑 Charcoal Portfolio | Digital Gallery Sanctuary
+# 🌑 Portafolio de Carboncillo | Santuario de Galería Digital
 
-Welcome to the **Charcoal Portfolio**, a digital sanctuary designed specifically to showcase high-contrast, textural charcoal artwork. 
+Bienvenido al **Portafolio de Carboncillo**, un santuario digital diseñado específicamente para exhibir obras de arte en carboncillo con alta textura y alto contraste.
 
-This project bridges the gap between the raw, tactile nature of charcoal dust and the precision of modern web engineering.
+Este proyecto cierra la brecha entre la naturaleza cruda y táctil del polvo de carbón y la precisión de la ingeniería web moderna.
 
-## 👁️ The Vision
+## 👁️ La Visión
 
-The goal of this portfolio is to act as a **Digital Gallery Sanctuary**. Rather than overwhelming the art with complex UI elements, the interface steps back, relying on a monochromatic palette of *Deep Obsidian* and *Pure Chalk White* to let the textural depth of the drawings breathe. 
+El objetivo de este portafolio es actuar como un **Santuario de Galería Digital**. En lugar de abrumar el arte con elementos complejos de interfaz, el diseño da un paso atrás, apoyándose en una paleta monocromática de *Negro Obsidiana* y *Blanco Tiza* para dejar respirar la profundidad de los dibujos.
 
-### Key Features
-- **Immersive Masonry Grid**: A fluid, organic layout that respects the original aspect ratios of the artwork.
-- **Ethereal Lightbox**: A borderless, full-screen viewing experience.
-- **Ghost Route Admin Panel**: A hidden, highly-secure upload portal accessible only via a secret `#admin` URL route.
-- **Atmospheric UI**: Features subtle grain overlays and *paper-on-stone* shadow effects to simulate physical artwork.
+### Características Principales
+- **Cuadrícula Masonry Inmersiva**: Un diseño fluido y orgánico que respeta las proporciones originales de cada obra.
+- **Lightbox Etéreo**: Una experiencia de visualización a pantalla completa sin bordes.
+- **Ruta Fantasma (Ghost Route)**: Un portal de subida oculto al que solo se puede acceder mediante la ruta secreta `#admin` en la URL.
+- **Interfaz Atmosférica**: Cuenta con sutiles efectos de granulado y sombras de *papel sobre piedra* para simular una obra física.
 
-## 🛠️ How It Was Built
+## 🛠️ Cómo Fue Construido
 
-This project was built with a focus on **lightweight performance** and **Vanilla Web Technologies**, avoiding unnecessary framework bloat.
+Este proyecto fue construido con un enfoque en el **rendimiento ligero** y el uso de **tecnologías web puras**, evitando la sobrecarga de frameworks innecesarios.
 
-### Tech Stack
-- **HTML5 & CSS3 (Vanilla)**: For strict structural control and fluid animations (like the fading grain loading states).
-- **Vanilla JavaScript (ES6 Modules)**: To handle the DOM manipulation, routing, and dynamic gallery rendering.
-- **Firebase Backend (v10)**:
-  - **Firestore**: Stores the metadata (titles, upload timestamps, and URLs).
-  - **Firebase Storage**: Handles the actual image hosting for the artwork.
+### Stack Tecnológico
+- **HTML5 y CSS3 (Puros)**: Para un control estructural estricto y animaciones fluidas (como los estados de carga granulados).
+- **JavaScript Nativo (Módulos ES6)**: Para manejar la manipulación del DOM, el enrutamiento y la renderización dinámica de la galería.
+- **Backend con Firebase (v10)**:
+  - **Firestore**: Almacena los metadatos (títulos, fechas de carga y URLs).
+  - **Firebase Storage**: Gestiona el alojamiento de las imágenes de las obras de arte.
 
-### Typography
-- **Playfair Display**: Used for headings to reflect organic, classical charcoal strokes.
-- **Inter**: Used for UI elements to provide engineering precision and readability.
+### Tipografía
+- **Playfair Display**: Utilizada para los encabezados, reflejando trazos orgánicos y clásicos del carboncillo.
+- **Inter**: Utilizada para los elementos de interfaz, proporcionando precisión técnica y legibilidad.
 
-## 🔒 The Ghost Route (Admin Access)
+## 🔒 La Ruta Fantasma (Acceso de Administrador)
 
-To maintain a perfectly clean UI for visitors, there are no visible login buttons. Instead, the site uses a "Ghost Route" approach for content management.
+Para mantener una interfaz perfectamente limpia para los visitantes, no hay botones de inicio de sesión visibles. En su lugar, el sitio utiliza un enfoque de "Ruta Fantasma" para la gestión del contenido.
 
-1. Navigate to your site's URL and append `#admin` at the end.
-2. The site will instantly fade into a cinematic blur (`backdrop-filter: blur(10px)`).
-3. The sleek Admin Upload portal will slide into view, allowing the direct upload of new pieces into Firebase.
+1. Navega a la URL de tu sitio y añade `#admin` al final (ej. `https://zanthry.github.io/portfolio/#admin`).
+2. El sitio se desvanecerá instantáneamente en un desenfoque cinematográfico (`backdrop-filter: blur(10px)`).
+3. El elegante portal de subida se deslizará a la vista, permitiendo publicar nuevas piezas directamente en tu galería y en Firebase.
 
 ---
-*Designed with contrast. Engineered with precision.*
+*Diseñado con contraste. Construido con precisión.*
